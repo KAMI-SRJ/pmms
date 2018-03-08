@@ -1,0 +1,124 @@
+		.body{
+			overflow-x: hidden;
+			padding:0 7%;
+			background-color: #e3dec1;
+			 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		}
+		.boom{
+			  background: -webkit-linear-gradient(left top, #F8B982 , #EEE161,#FABC7D); 
+			  background: -o-linear-gradient(bottom right, #F8B982, #EEE161,#FABC7D);
+			  background: -moz-linear-gradient(bottom right, #F8B982, #EEE161,#FABC7D);
+			  background: linear-gradient(to bottom right, #F8B982 , #EEE161,#FABC7D); 
+		}
+		.navbar1{
+			border-radius: 0;
+			border:0;
+			background-color:#F80A0A;
+			margin-top: -1px;
+
+		}
+		.nav>li{
+    		color: rgb(255,255,0);
+    		text-align: center;
+    		font-size: 2em;
+    		align-items: center;
+		}
+
+		.img{
+			text-align: center;
+			margin:10px 0;
+		}
+		.text{
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		.text a{
+			color: black;
+		}
+
+		.text a:hover{
+			color: #706F6F;
+			text-decoration: none;
+		}
+		.text a:visited{
+			
+			text-decoration: none;
+		}
+		.active{
+			color: #eee;
+			background-color: #F0AE40 ;
+		}
+		#main-nav li a{
+			color: red;
+			font-size: 18px;
+		}
+		#main-nav li a:hover{
+			color: #eee;
+			background-color: #F0AE40 ;
+		}
+		#main-nav li a:active{
+			background-color: #F0AE40 ;
+		}
+		#main-nav li a:visited{
+			background-color: #F0AE40 ;
+		}
+		.title{
+			height: 60px;
+			background-color:#F80A0A;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+		table{
+			margin-top: 35px;
+			border: 1px solid #F94F4F;
+			text-align: center;
+			
+		}
+		td{
+            text-align:center;
+            width:200px;
+            height:50px;
+            font-family:Arial,Helvetica,sans-serif;
+            font-size: 18px;
+        }
+
+        th{
+            text-align:center;
+            width:200px;
+            height:50px;
+            font-family:Arial,Helvetica,sans-serif;
+            font-size: 18px;
+        }
+		.table > thead > tr > th,
+		.table > tbody > tr > th,
+		.table > tfoot > tr > th,
+		.table > thead > tr > td,
+		.table > tbody > tr > td,
+		.table > tfoot > tr > td {
+		  padding: 8px;
+		  line-height: 1.42857143;
+		  vertical-align: top;
+		  border-top: 1px solid #F94F4F;
+		}
+		.table > thead > tr > th{
+			background-color: #F80A0A;
+  			color: rgb(255,255,0);
+		}
+
+		.table-hover thead  tr {
+  			background-color: #F80A0A;
+  			color: rgb(255,255,0);
+		}
+		.table-hover > tbody > tr > td.active:hover,
+		.table-hover > tbody > tr > th.active:hover,
+		.table-hover > tbody > tr.active:hover > td,
+		.table-hover > tbody > tr:hover > .active,
+		.table-hover > tbody > tr.active:hover > th {
+		  background-color: #eee;
+		  color:orange;
+		}
+		.table-hover > tbody > tr:hover {
+		  background-color: #eee;
+		  color:orange;
+		}
+		

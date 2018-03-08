@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>党员管理系统 | </title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../css/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../css/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../css/bootstrap/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../css/custom.min.css" rel="stylesheet">
+    
+  </head>
+
+  <body class="nav-md ">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-flag"></i> <span>信息管理</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+          
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> 用户信息 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">用户管理</a></li>
+                      <li><a href="name.html">角色管理</a></li>
+                      <li><a>资源管理<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li class="sub_menu"><a href="level2.html">心得管理</a>
+                            </li>
+                            <li><a href="#level2_1">思想汇报</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </ul>
+                  </li>
+                  
+                  <li><a><i class="fa fa-sitemap"></i> 成绩管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="score.html">成绩单</a></li>
+                    </ul>
+                  </li>  
+                  <li><a><i class="fa fa-table"></i> 心得管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="tables.html">Tables</a></li>
+                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+              <div class="menu_section">
+                
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-bug"></i> 新闻管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="e_commerce.html">基本信息</a></li>
+                      
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-edit"></i> 公告管理<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form.html">查看公告</a></li>
+                      
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-windows"></i> 发布讨论 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="page_403.html">发布心得</a></li>
+                      
+                    </ul>
+                  </li>
+                                  
+                  
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <!-- 在此插入图片 -->
+                    <img src="../images/img.jpg" alt="">欧小娇
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> 个人信息</a></li>
+             
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> 登录</a></li>
+                  </ul>
+                </li>
+
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+         <div class="right_col" role="main">
+
+          <div class="row">
+        
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                  	<h2>用户<small>管理</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                    	 
+                      <li><form class="form-inline" action="/" method="POST">
+    					<div class="form-group">  
+						    <div class="input-group col-xs-12">  
+						        <div class="input-group-btn">  
+						            <select name="type" class="form-control" style="width: auto;">  
+						                <option value="1">姓名</option>  
+						                <option value="2">学号</option>  
+						            </select>  
+						        </div>  
+						        <input type="text" name="keyword" id="keyword" class="form-control" placeholder="请您输入关键词">  
+						        <span class="input-group-btn">  
+						            <button class="btn btn-success" id="search_submit" type="submit">查询</button>  
+						        </span>  
+						    </div>  
+						</div>  
+						</form></li>
+	  					
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="x_content">
+
+                    
+                    <div class="table-responsive">
+                      <table class="table table-striped jambo_table bulk_action">
+                        <thead>
+                          <tr class="headings">
+                            <th>
+                              <input type="checkbox"  name="allChecked" onchange="Do_Check()" class="flat">
+                            </th>
+                            <th class="column-title">新闻概要 </th>
+                            <th class="column-title">发表人 </th>
+                            <th class="column-title">发表日期</th>
+                            <th class="column-title">是否审核 </th>
+                            <th class="column-title">是否置顶</th>
+                            <th class="column-title no-link last"><span class="nobr">操作</span>
+                            </th>
+                            <th class="bulk-actions" colspan="6">
+                              <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" "><a href="#">欢迎你</a></td>
+                            <td class=" ">江蕙</td>
+                            <td class=" ">2017.10.14</td>
+                            <td class=" ">是</td>
+                            <td class=" ">是</td>
+                            <td class=" last"><button class="btn btn-success"><a href="add.html" style="color: #fff">添加</a></button><button class="btn btn-success"><a href="move.html" style="color: #fff">修改</a></button><button class="btn btn-success"><a onclick="move()
+      " style="color: #fff">删除</a></button>
+                           </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" "><a href="#">欢迎你</a></td>
+                            <td class=" ">江蕙</td>
+                            <td class=" ">2017.10.14</td>
+                            <td class=" ">是</td>
+                            <td class=" ">是</td>
+                            <td class=" last"><button class="btn btn-success"><a href="add.html" style="color: #fff">添加</a></button><button class="btn btn-success"><a href="move.html" style="color: #fff">修改</a></button><button class="btn btn-success"><a onclick="move()" style="color: #fff">删除</a></button>
+                            </td>
+                          </tr>
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" "><a href="#">欢迎你</a></td>
+                            <td class=" ">江蕙</td>
+                            <td class=" ">2017.10.14</td>
+                            <td class=" ">是</td>
+                            <td class=" ">是</td>
+                            <td class=" last"><button class="btn btn-success"><a href="add.html" style="color: #fff">添加</a></button><button class="btn btn-success"><a href="move.html" style="color: #fff">修改</a></button><button class="btn btn-success"><a onclick="move()" style="color: #fff">删除</a></button>
+                            </td>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" "><a href="#">欢迎你</a></td>
+                            <td class=" ">江蕙</td>
+                            <td class=" ">2017.10.14</td>
+                            <td class=" ">是</td>
+                            <td class=" ">是</td>
+                            <td class=" last"><button class="btn btn-success"><a href="add.html" style="color: #fff">添加</a></button><button class="btn btn-success"><a href="move.html" style="color: #fff">修改</a></button><button class="btn btn-success"><a onclick="move()" style="color: #fff">删除</a></button>
+                            </td>
+                            </td>
+                          </tr>
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" "><a href="#">欢迎你</a></td>
+                            <td class=" ">江蕙</td>
+                            <td class=" ">2017.10.14</td>
+                            <td class=" ">是</td>
+                            <td class=" ">是</td>
+                            <td class=" last"><button class="btn btn-success"><a href="add.html" style="color: #fff">添加</a></button><button class="btn btn-success"><a href="move.html" style="color: #fff">修改</a></button><button class="btn btn-success"><a onclick="move()" style="color: #fff">删除</a></button>
+                            </td>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" "><a href="#">欢迎你</a></td>
+                            <td class=" ">江蕙</td>
+                            <td class=" ">2017.10.14</td>
+                            <td class=" ">是</td>
+                            <td class=" ">是</td>
+                            <td class=" last"><button class="btn btn-success"><a href="add.html" style="color: #fff">添加</a></button><button class="btn btn-success"><a href="move.html" style="color: #fff">修改</a></button><button class="btn btn-success"><a onclick="move()" style="color: #fff">删除</a></button>
+                            </td>
+                            </td>
+                          </tr>
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" "><a href="#">欢迎你</a></td>
+                            <td class=" ">江蕙</td>
+                            <td class=" ">2017.10.14</td>
+                            <td class=" ">是</td>
+                            <td class=" ">是</td>
+                            <td class=" last"><button class="btn btn-success"><a href="add.html" style="color: #fff">添加</a></button><button class="btn btn-success"><a href="move.html" style="color: #fff">修改</a></button><button class="btn btn-success"><a onclick="move()" style="color: #fff">删除</a></button>
+                            </td>
+                            </td>
+                          </tr>
+                          <tr class="odd pointer">
+                            <td class="a-center ">
+                              <input type="checkbox" class="flat" name="table_records">
+                            </td>
+                            <td class=" "><a href="#">欢迎你</a></td>
+                            <td class=" ">江蕙</td>
+                            <td class=" ">2017.10.14</td>
+                            <td class=" ">是</td>
+                            <td class=" ">是</td>
+                            <td class=" last"><button class="btn btn-success"><a href="add.html" style="color: #fff">添加</a></button><button class="btn btn-success"><a href="move.html" style="color: #fff">修改</a></button><button class="btn btn-success"><a onclick="move()" style="color: #fff">删除</a></button>
+                            </td>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+              
+            
+                  </div>
+                </div>
+              </div>
+       
+            </div>
+              
+              <div class="row">
+                
+                <div class="col-md-12 col-sm-12 col-xs-12" >
+                  <nav aria-label="..." style="text-align: center;">
+                          <ul class="pagination" >
+                            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li ><a href="#">2 <span class="sr-only"></span></a></li>
+                            <li ><a href="#">3 <span class="sr-only"></span></a></li>
+                            <li ><a href="#">4 <span class="sr-only"></span></a></li>
+                            <li ><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                          </ul>
+                        </nav>
+                </div> 
+              </div>
+            </div>
+          
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer >
+          <div class="pull-right">
+             by <a href="https://DUGStudio.org">DUG Studio</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>   
+  </body>
+  <script>
+      function move() {
+        alert("删除成功");
+      }
+      function Do_Check()
+      {
+        var ch=document.getElementsByName("table_records");
+        console.log(document.getElementsByName("allChecked")[0].checked);
+        if(document.getElementsByName("allChecked")[0].checked==true)
+        {
+          for(var i=0;i<ch.length;i++)
+          {
+          ch[i].checked=true;
+          }
+        }
+        else{
+          for(var i=0;i<ch.length;i++)
+          {
+            ch[i].checked=false;
+          }
+        }
+      }
+    </script>
+    
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+   
+
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../js/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../js/nprogress.js"></script>
+    <!-- DateJS -->
+    <script src="../js/date.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../js/custom.min.js"></script>
+</html>

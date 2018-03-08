@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>党员管理系统 | </title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../css/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../css/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../css/bootstrap/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../css/custom.min.css" rel="stylesheet">
+
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>信息管理</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+          
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> 用户信息 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">用户管理</a></li>
+                      <li><a href="name.html">角色管理</a></li>
+                      <li><a>资源管理<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li class="sub_menu"><a href="level2.html">心得管理</a>
+                            </li>
+                            <li><a href="#level2_1">思想汇报</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </ul>
+                  </li>
+                  
+                  <li><a><i class="fa fa-sitemap"></i> 成绩管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="score.html">成绩单</a></li>
+                    </ul>
+                  </li>  
+                  <li><a><i class="fa fa-table"></i> 心得管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="tables.html">Tables</a></li>
+                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+              <div class="menu_section">
+                
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-bug"></i> 新闻管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="e_commerce.html">基本信息</a></li>
+                      
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-edit"></i> 公告管理<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form.html">查看公告</a></li>
+                      
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-windows"></i> 发布讨论 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="page_403.html">发布心得</a></li>
+                      
+                    </ul>
+                  </li>
+                                  
+                  
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="../images/img.jpg" alt="">欧小娇
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> 个人信息</a></li>
+             
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> 登录</a></li>
+                  </ul>
+                </li>
+
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+         <div class="right_col" role="main">
+          <div class="row">
+           <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>文件上传</h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <div id="alerts"></div>
+                  <div class="btn-toolbar editor" data-role="editor-toolbar" data-target="#editor-one">
+                    <div class="btn-group">
+                      <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="fa fa-font"></i><b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                      </ul>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a data-edit="fontSize 5">
+                            <p style="font-size:17px">Huge</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a data-edit="fontSize 3">
+                            <p style="font-size:14px">Normal</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a data-edit="fontSize 1">
+                            <p style="font-size:11px">Small</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
+                      <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
+                      <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
+                      <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
+                      <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
+                      <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-dedent"></i></a>
+                      <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
+                      <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
+                      <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
+                      <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="fa fa-link"></i></a>
+                      <div class="dropdown-menu input-append">
+                        <input class="span2" placeholder="URL" type="text" data-edit="createLink" />
+                        <button class="btn" type="button">Add</button>
+                      </div>
+                      <a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="fa fa-cut"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="fa fa-picture-o"></i></a>
+                      <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
+                      <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
+                    </div>
+                  </div>
+
+                  <div id="editor-one" class="editor-wrapper">111</div>
+
+                  <textarea name="descr" id="descr" style="display:none;">22222</textarea>
+                  
+                  <br />
+
+                  <div class="ln_solid"></div>
+                  <div class="form-group">
+                        <div class="col-md-6 col-md-offset-5">
+                          <button type="submit" class="btn btn-primary">取消</button>
+                          <button id="send" type="submit" class="btn btn-success">提交</button>
+                        </div>
+                      </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+
+          <div class="pull-right">
+             by <a href="https://DUGStudio.org">DUG Studio</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../js/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../js/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../js/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../js/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../js/moment.min.js"></script>
+    <script src="../js/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="../js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../js/jquery.hotkeys.js"></script>
+    <script src="../js/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="../js/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="../js/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="../js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="../js/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="../js/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="../js/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <!-- Custom Theme Scripts -->
+    <script src="../js/custom.min.js"></script>
+  </body>
+</html>
