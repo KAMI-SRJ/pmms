@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pmms_web:war">
+    <output-path>$PROJECT_DIR$/pmms_web/target</output-path>
+    <root id="archive" name="pmms_web.war">
+      <element id="artifact" artifact-name="pmms_web:war exploded" />
+    </root>
+  </artifact>
+</component>

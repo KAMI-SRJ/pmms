@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pmms_common" />
+        <module name="pmms_dao" />
+        <module name="pmms_model" />
+        <module name="pmms_service" />
+        <module name="pmms_web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="pmms" target="1.7" />
+      <module name="pmms_common" target="1.7" />
+      <module name="pmms_dao" target="1.7" />
+      <module name="pmms_model" target="1.7" />
+      <module name="pmms_service" target="1.7" />
+      <module name="pmms_web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding UTF8" />
+  </component>
+</project>
